@@ -10,6 +10,14 @@ Setup is pretty simple:
 
 2) Set this up as as a Trigger in iTerm 2 like so:
 
+Build newer than 1.0.0.20111026
+
+    Regular expression: \*\*B0100
+    Action: Run Coprocess
+    Parameters: /usr/local/bin/iterm2-send-zmodem.sh
+
+Build older than 1.0.0.20111026
+
     Regular expression: [\$#] rz( -v)?$
     Action: Run Coprocess
     Parameters: /usr/local/bin/iterm2-send-zmodem.sh
