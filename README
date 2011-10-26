@@ -1,0 +1,17 @@
+ZModem integration for iTerm 2
+------------------------------
+
+This script can be used to automate ZModem transfers from your OSX desktop to a server that can run lrzsz (in theory, any machine 
+that supports SSH).
+
+Setup is pretty simple:
+
+1) Save the iterm2-send-zmodem.sh in /usr/local/bin/
+
+2) Set this up as as a Trigger in iTerm 2 like so:
+
+    Regular expression: [\$#] rz( -v)?$
+    Action: Run Coprocess
+    Parameters: /usr/local/bin/iterm2-send-zmodem.sh
+
+
