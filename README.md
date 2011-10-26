@@ -6,9 +6,9 @@ that supports SSH), and vice-versa.
 
 Setup is pretty simple:
 
-1) Save the iterm2-send-zmodem.sh in /usr/local/bin/
+1) Save the iterm2-send-zmodem.sh and iterm2-recv-zmodem.sh scripts in /usr/local/bin/
 
-2) Set this up as as a Trigger in iTerm 2 like so:
+2) Set up a Trigger in iTerm 2 like so:
 
 Build newer than 1.0.0.20111026
 
