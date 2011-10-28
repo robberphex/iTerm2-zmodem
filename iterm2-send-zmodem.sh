@@ -1,3 +1,4 @@
+#!/bin/bash
 # Author: Matt Mastracci (matthew@mastracci.com)
 # AppleScript from http://stackoverflow.com/questions/4309087/cancel-button-on-osascript-in-a-bash-script
 # licensed under cc-wiki with attribution required 
