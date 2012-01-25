@@ -9,8 +9,9 @@ The minimum supported iTerm2 version is 1.0.0.20120108
 Setup is pretty simple:
 
 1. Save the iterm2-send-zmodem.sh and iterm2-recv-zmodem.sh scripts in /usr/local/bin/
-2. Set up a Trigger in iTerm 2 like so:
+2. Set up Triggers in iTerm 2 like so:
 
+<pre>
     Regular expression: \*\*B0100
     Action: Run Silent Coprocess
     Parameters: /usr/local/bin/iterm2-send-zmodem.sh
@@ -18,6 +19,7 @@ Setup is pretty simple:
     Regular expression: \*\*B00000000000000
     Action: Run Silent Coprocess
     Parameters: /usr/local/bin/iterm2-recv-zmodem.sh
+</pre>
 
 To send a file to a remote machine:
 
