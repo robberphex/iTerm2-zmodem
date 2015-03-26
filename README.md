@@ -8,6 +8,7 @@ The minimum supported iTerm2 version is 1.0.0.20120108
 
 Setup is pretty simple:
 
+0. Install lrzsz on OSX: brew install lrzsz
 1. Save the iterm2-send-zmodem.sh and iterm2-recv-zmodem.sh scripts in /usr/local/bin/
 2. Set up Triggers in iTerm 2 like so:
 
