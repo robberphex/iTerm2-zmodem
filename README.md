@@ -13,7 +13,7 @@ Setup is pretty simple:
 2. Set up Triggers in iTerm 2 like so:
 
 <pre>
-    Regular expression: \*\*B0100
+    Regular expression: rz waiting to receive.\*\*B0100
     Action: Run Silent Coprocess
     Parameters: /usr/local/bin/iterm2-send-zmodem.sh
 
