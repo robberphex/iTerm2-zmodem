@@ -6,7 +6,14 @@ that supports SSH), and vice-versa.
 
 The minimum supported iTerm2 version is 1.0.0.20120108
 
-Setup is pretty simple:
+Troubleshooting
+---------------
+
+ * Sending a directory may fail: this is a known issue
+ * If you are using `tmux` or some other terminal multiplexer, try using the `-e` option to `sz` and/or `rz` to force escaping of more characters.
+
+Setup
+-----
 
 0. Install lrzsz on OSX: brew install lrzsz
 1. Save the iterm2-send-zmodem.sh and iterm2-recv-zmodem.sh scripts in /usr/local/bin/
