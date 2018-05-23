@@ -10,7 +10,8 @@ Troubleshooting
 ---------------
 
  * Sending a directory may fail: this is a known issue
- * If you are using `tmux` or some other terminal multiplexer, try using the `-e` option to `sz` and/or `rz` on your server to force escaping of more characters during transmission.
+ * If you are using `tmux` or some other terminal multiplexer (ie: `screen`), try using the `-e` option to `sz` and/or `rz` on your server to force escaping of more characters during transmission.
+ * This tool may also fail if you are using `expect`
 
 Setup
 -----
