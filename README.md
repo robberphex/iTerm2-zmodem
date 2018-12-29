@@ -19,6 +19,7 @@ Setup
 0. Install lrzsz on OSX: `brew install lrzsz`
 1. Save the `iterm2-send-zmodem.sh` and `iterm2-recv-zmodem.sh` scripts in `/usr/local/bin/`
 2. Set up Triggers in iTerm 2 like so:
+[How to Create a Trigger](https://www.iterm2.com/documentation-triggers.html)
 
 <pre>
     Regular expression: rz waiting to receive.\*\*B0100
