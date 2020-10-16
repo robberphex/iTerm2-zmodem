@@ -8,7 +8,16 @@ osascript -e 'tell application "iTerm2" to version' > /dev/null 2>&1 && NAME=iTe
 if [[ $NAME = "iTerm" ]]; then
 	FILE=$(osascript -e 'tell application "iTerm" to activate' -e 'tell application "iTerm" to set thefile to choose file with prompt "Choose a file to send"' -e "do shell script (\"echo \"&(quoted form of POSIX path of thefile as Unicode text)&\"\")")
 else
-	FILE=$(osascript -e 'tell application "iTerm2" to activate' -e 'tell application "iTerm2" to set thefile to choose file with prompt "Choose a file to send"' -e "do shell script (\"echo \"&(quoted form of POSIX path of thefile as Unicode text)&\"\")")
+	FILE=$(osascript <<- EOF
+               tell application "iTerm2" to activate
+               tell application "iTerm2" to set thefile to choose file with prompt "Choose some files to send" with multiple selections allowed
+               set somefiles to ""
+               repeat with fileitem in thefile
+                 set somefiles to (somefiles & POSIX path of fileitem as Unicode text) & " "
+               end repeat
+               return somefiles
+               EOF
+	)
 fi
 if [[ $FILE = "" ]]; then
 	echo Cancelled.
