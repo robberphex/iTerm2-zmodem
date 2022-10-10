@@ -20,7 +20,7 @@ if [[ $FILE = "" ]]; then
 	echo \# Cancelled transfer
 else
 	cd "$FILE"
-	/usr/local/bin/rz --rename --escape --binary --bufsize 4096 
+	/usr/local/bin/rz --rename --escape --binary --bufsize 4096 2>&1
 	sleep 1
 	echo
 	echo
